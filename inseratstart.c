@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-//insertion in a linkedlist at start
  
 struct Node
 {
@@ -9,7 +8,7 @@ struct Node
 }; 
 void linkedListTraversal(struct Node *ptr)
 {
-    while (ptr != NULL)
+     while (ptr != NULL)
     {
         printf("Element: %d\n", ptr->data);
         ptr = ptr->next;
