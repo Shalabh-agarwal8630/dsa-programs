@@ -14,13 +14,6 @@ void linkedListTraversal(struct Node *ptr)
         ptr = ptr->next;
     }
 }
-struct Node * insertatfirst(struct Node *head, int data){
-    struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
-    ptr->data = data;
- 
-    ptr->next = head;
-    return ptr;
-}
 struct Node * insertatend(struct Node * head,int data){
     struct Node *ptr=(struct Node *) malloc(sizeof(struct Node *));
     ptr->data=data;
@@ -64,7 +57,6 @@ int main()
     fourth->next = NULL;
  
     linkedListTraversal(head);
-    //head=insertatfirst(head,67);
     insertatend(head,88);
     linkedListTraversal(head);
 
